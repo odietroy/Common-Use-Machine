@@ -1,5 +1,6 @@
 from Calculator.Calculator import calculator
 from misc.loadingscreen import loading_screen
+from games.guessinggame import guessinggame
 
 
 def maininterface():
@@ -11,6 +12,8 @@ def maininterface():
         calculator()
     if option.lower() == "files":
         pass
+    if option.lower() == "guessinggame":
+        guessinggame()
 
 
 while True:
