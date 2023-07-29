@@ -2,9 +2,9 @@ from Calculator.Calculator import calculator
 from misc.loadingscreen import loading_screen
 from games.guessinggame import guessinggame
 
+Break = False
 
 def maininterface():
-    print("Hello and welcome to the Common Use Machine")
     option = input("Select option here --> ")
     if option.lower() == "calc":
         loading_screen()
@@ -13,7 +13,15 @@ def maininterface():
         pass
     if option.lower() == "guessinggame":
         guessinggame()
+    if option.lower() == "help":
+        print(""" 
+              Applications:
+              Calculator: 'calc'
+              Guessing Game: 'guessinggame'
+               """)
+        
+        
 
-
-while True:
+print("Welcome, please type 'help' to see a list of functions and applications")
+while Break == False:
     maininterface()
