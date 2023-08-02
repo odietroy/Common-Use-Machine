@@ -2,6 +2,8 @@ from Calculator.Calculator import calculator
 from misc.loadingscreen import loading_screen
 from games.guessinggame import guessinggame
 
+
+
 Break = False
 
 def maininterface():
@@ -16,8 +18,8 @@ def maininterface():
     if option.lower() == "help":
         print(""" 
               Applications:
-              Calculator: 'calc'
-              Guessing Game: 'guessinggame'
+                Calculator: 'calc'
+                Guessing Game: 'guessinggame'
                """)
         
         
