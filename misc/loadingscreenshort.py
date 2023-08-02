@@ -1,7 +1,7 @@
 import time
 
 
-def loadingscreen():
+def loading_screen():
     def print_percent_done(index, total, bar_len=50, title='Please wait'):
         """
         index is expected to be 0 based index. 
@@ -24,4 +24,4 @@ def loadingscreen():
     r = 50
     for i in range(r):
         print_percent_done(i, r)
-        time.sleep(.5)
+        time.sleep(.02)
